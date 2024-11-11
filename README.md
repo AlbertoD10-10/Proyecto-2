@@ -1,4 +1,4 @@
-# Info de la materia: ST0263 - Tópicos Especiales en Telemática
+# Info de la materia: C2466-ST0263-1586 - Tópicos Especiales en Telemática
 ## Estudiantes:
 - Alberto Andres Diaz Mejia aadiazm@eafit.edu.co
 - Andres Felipe Rua Ortega , afruao@eafit.edu.co
