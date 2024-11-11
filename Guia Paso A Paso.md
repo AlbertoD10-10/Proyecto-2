@@ -173,15 +173,14 @@ spec:
 ```
 ## 8. Verificación
 
-### 1. Asegúrate de que todos los pods estén corriendo correctamente:
+1. Asegúrate de que todos los pods estén corriendo correctamente:
 
 ```bash
 kubectl get pods
 ```
 
-### 2. Accede a la IP pública proporcionada por el LoadBalancer para verificar que WordPress esté corriendo correctamente.
+2. Accede a la IP pública proporcionada por el LoadBalancer para verificar que WordPress esté corriendo correctamente.
 
 ## Conclusión
-
-### Este proyecto establece un clúster de Kubernetes en GCP, configurando almacenamiento persistente a través de NFS, y desplegando WordPress y su base de datos MySQL en el clúster.
+Este proyecto establece un clúster de Kubernetes en GCP, configurando almacenamiento persistente a través de NFS, y desplegando WordPress y su base de datos MySQL en el clúster.
 
