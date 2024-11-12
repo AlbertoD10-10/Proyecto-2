@@ -1,10 +1,10 @@
-# Proyecto de Configuración de Clúster Kubernetes en GCP con NFS y WordPress
+# Proyecto de Configuración de Clúster Kubernetes en AWS con NFS y WordPress
 
-Este proyecto describe cómo configurar un clúster de Kubernetes en Google Cloud Platform (GCP) con almacenamiento persistente utilizando NFS, y desplegar WordPress junto con su base de datos MySQL en el clúster.
+Este proyecto describe cómo configurar un clúster de Kubernetes en Amazon Web Services (AWS) con almacenamiento persistente utilizando NFS, y desplegar WordPress junto con su base de datos MySQL en el clúster.
 
 ## Requisitos Previos
 
-- **Cuenta en Google Cloud Platform (GCP)**.
+- **Cuenta en Amazon Web Services (AWS)**.
 - **Instalación de herramientas**:
   - `gcloud` CLI (Google Cloud SDK).
   - `kubectl` CLI.
@@ -13,7 +13,7 @@ Este proyecto describe cómo configurar un clúster de Kubernetes en Google Clou
 
 ## Pasos de Configuración
 
-### 1. Creación y Configuración Inicial de Instancias en GCP
+### 1. Creación y Configuración Inicial de Instancias en AWS
 
 1. Crear 4 máquinas virtuales (VMs) en GCP con Ubuntu 20.04 LTS y 20 GB de almacenamiento. Nombres de las VMs:
    - `microk8s-master`
@@ -21,7 +21,7 @@ Este proyecto describe cómo configurar un clúster de Kubernetes en Google Clou
    - `microk8s-worker-2`
    - `microk8s-nfs`
    
-2. Asegurarse de que las VMs tengan acceso a HTTP y HTTPS, y verificar el balanceador de carga de GCP.
+2. Asegurarse de que las VMs tengan acceso a HTTP y HTTPS, y verificar el balanceador de carga de AWS.
 
 ### 2. Configuración de la Instancia Master
 
