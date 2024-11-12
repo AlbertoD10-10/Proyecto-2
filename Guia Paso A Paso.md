@@ -6,7 +6,6 @@ Este proyecto describe cómo configurar un clúster de Kubernetes en Amazon Web 
 
 - **Cuenta en Amazon Web Services (AWS)**.
 - **Instalación de herramientas**:
-  - `gcloud` CLI (Google Cloud SDK).
   - `kubectl` CLI.
   - **Helm 3** para gestionar Kubernetes charts.
   - **SSH** para conectarse a las instancias de VM.
