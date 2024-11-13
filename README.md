@@ -8,6 +8,7 @@
 ## Profesor: 
  Edwin Montoya, emontoya@eafit.edu.co
 ## Video sustentación
+https://youtu.be/5J_7lKF5lmk?si=Q2Pwrg4wp6a-ndnB
 ## Guía paso a paso
 Para acceder al archivo, es necesario darle click al siguiente link: 
 [Acceder al archivo Guía Paso A Paso.md](https://github.com/AlbertoD10-10/Proyecto-2/blob/main/Guia%20Paso%20A%20Paso)
