@@ -119,35 +119,35 @@ Repita los pasos de instalación en las instancias microk8s-worker-1 y microk8s-
 
    ## 6. Configuración de Almacenamiento y Base de Datos
 
-1. Instalación del CSI Driver para NFS en el nodo maestro:
-
+ 1. Instalación del CSI Driver para NFS en el nodo maestro:
    ```bash
    microk8s enable helm3
    microk8s helm3 repo add csi-driver-nfs https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
    microk8s helm3 repo update
    microk8s helm3 install csi-driver-nfs csi-driver-nfs/csi-driver-nfs --namespace kube-system --set kubeletDir=/var/snap/microk8s/common/var/lib/kubelet
    ```
-2. Configure un StorageClass para NFS y aplique un PersistentVolumeClaim para la aplicación.
+ 2. Configure un StorageClass para NFS y aplique un PersistentVolumeClaim para la aplicación.
 
 
    ## 7. Configuración del Dominio y Certificados HTTPS
 
-1. En el panel de administración de dominios, configure el registro A apuntando a la IP pública del nodo maestro.
+ 1. En el panel de administración de dominios, configure el registro A apuntando a la IP pública del nodo maestro.
 
-2. En microk8s-master, habilite cert-manager para gestionar los certificados TLS:
+ 2. En microk8s-master, habilite cert-manager para gestionar los certificados TLS:
 
-   ```bash
+  ```bash
   microk8s enable cert-manager
-    ```
+  ```
+         
 
-3. Cree un ClusterIssuer en Kubernetes para gestionar los certificados de Let's Encrypt.
+ 3. Cree un ClusterIssuer en Kubernetes para gestionar los certificados de Let's Encrypt.
 
    ## 8. Despliegue de la Aplicación en el Clúster
 
-1. Cargue los archivos de despliegue para MySQL y WordPress en el clúster.
+ 1. Cargue los archivos de despliegue para MySQL y WordPress en el clúster.
 
-2. Aplique los recursos de Kubernetes necesarios para iniciar la aplicación:
-
+ 2. Aplique los recursos de Kubernetes necesarios para iniciar la aplicación:
+ 
    ```bash
-kubectl apply -f <archivo>.yaml
-    ```
+   kubectl apply -f <archivo>.yaml
+   ```
