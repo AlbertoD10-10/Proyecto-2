@@ -107,4 +107,13 @@ Repita los pasos de instalación en las instancias microk8s-worker-1 y microk8s-
 ### 5. Creación del Clúster Kubernetes
 
 1. En microk8s-master, ejecute:
-   
+   ```bash
+   microk8s add-node
+   ```
+2. Siga las instrucciones para agregar microk8s-worker-1 y microk8s-worker-2 al clúster.
+3. Verifique los nodos en el clúster
+   ```bash
+   skubectl get nodes
+
+   ```
+
