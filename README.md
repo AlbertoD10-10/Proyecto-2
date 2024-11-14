@@ -117,9 +117,10 @@ Repita los pasos de instalación en las instancias microk8s-worker-1 y microk8s-
    ```
 
 
-   ## 6. Configuración de Almacenamiento y Base de Datos
+## 6. Configuración de Almacenamiento y Base de Datos
 
  1. Instalación del CSI Driver para NFS en el nodo maestro:
+
    ```bash
    microk8s enable helm3
    microk8s helm3 repo add csi-driver-nfs https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
