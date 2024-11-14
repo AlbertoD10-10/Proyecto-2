@@ -95,3 +95,16 @@ Repita los pasos de instalación en las instancias microk8s-worker-1 y microk8s-
    sudo chown nobody:nogroup /mnt/wordpress
    sudo chmod 777 /mnt/wordpress
    ```
+2. Edite el archivo /etc/exports y agregue:
+   ```bash
+   /mnt/wordpress *(rw,sync,no_subtree_check)
+   ```
+3. Reinicie el servicio NFS:
+   ```bash
+   sudo systemctl restart nfs-kernel-server
+   ```
+
+### 5. Creación del Clúster Kubernetes
+
+1. En microk8s-master, ejecute:
+   
